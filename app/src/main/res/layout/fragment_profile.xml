@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/fragment_background">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="visible"
+            android:layout_marginTop="70dp"
+            android:layout_below="@+id/heading"
+            android:layout_centerHorizontal="true"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/heading"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/image"
+            android:layout_marginTop="20dp"
+            android:text="Name"
+            android:textSize="25dp"
+            android:id="@+id/name"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/color_background_color"
+            android:layout_marginBottom="20dp"
+            android:text="Logout"
+            android:textColor="@color/text_color"
+            android:textSize="16dp"
+            android:id="@+id/logout"
+
+            />
+
+  
+    </RelativeLayout>
+</FrameLayout>
