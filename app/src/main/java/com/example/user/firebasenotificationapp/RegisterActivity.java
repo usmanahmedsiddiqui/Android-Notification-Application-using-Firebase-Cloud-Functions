@@ -53,7 +53,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_register);
 
         auth = FirebaseAuth.getInstance();
-        database = FirebaseDatabase.getInstance().getReferenceFromUrl("https://fir-notification-6a476.firebaseio.com/").child("Users");
+
+        database = FirebaseDatabase.getInstance().getReference().child("Users");
         StorageReference = FirebaseStorage.getInstance().getReference().child("images");
 
 
